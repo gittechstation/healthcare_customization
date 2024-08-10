@@ -1,0 +1,164 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:TSEL-{YYYY}-{######}",
+ "creation": "2024-07-25 22:06:09.336914",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_tpgp",
+  "amended_from",
+  "posting_date",
+  "posting_time",
+  "cost_center",
+  "column_break_ectt",
+  "transaction_date",
+  "ignore_pricing_rule",
+  "company",
+  "therapy_session_items_section",
+  "items",
+  "total",
+  "currency",
+  "grand_total",
+  "price_list_currency",
+  "plc_conversion_rate",
+  "customer_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_tpgp",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Therapy Session Entry Logs",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Posting Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "posting_time",
+   "fieldtype": "Time",
+   "in_list_view": 1,
+   "label": "Posting Time",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_ectt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "transaction_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Transaction Date",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "ignore_pricing_rule",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "ignore_pricing_rule"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "therapy_session_items_section",
+   "fieldtype": "Section Break",
+   "label": "Therapy Session Items"
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "Therapy Session Entry Logs Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "currency",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "currency"
+  },
+  {
+   "fieldname": "grand_total",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "grand_total"
+  },
+  {
+   "fieldname": "price_list_currency",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "price_list_currency"
+  },
+  {
+   "fieldname": "plc_conversion_rate",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "plc_conversion_rate"
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "customer_name"
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Currency",
+   "label": "Total Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cost_center",
+   "fieldtype": "Link",
+   "label": "Cost Center",
+   "options": "Cost Center"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-08-02 22:23:09.131041",
+ "modified_by": "Administrator",
+ "module": "Healthcare Customization",
+ "name": "Therapy Session Entry Logs",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
